@@ -6,7 +6,7 @@
 #define SIZE 12
 
 int main() {
-    int a[SIZE] = {1, 3, 5, 2, 4, 7, 8, 88, 45, 61, 89, 45};
+    int a[SIZE] = {1, 3, 5, 4, 7, 2, 99, 16, 45, 67, 89, 45};
     int nomor, total;
 
     printf("Mencetak setiap elemen dari suatu array:\n");

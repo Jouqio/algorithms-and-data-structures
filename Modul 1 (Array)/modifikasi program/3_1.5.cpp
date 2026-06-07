@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    int A[3][4], B[3][4], X[3][4], Y[3][4], C[3][4], i, j;
+    int A[3][4], B[3][4], H[3][4], i, j;
 
     // Masukan matriks A
     for (i = 0; i < 3; i++)
@@ -45,13 +45,13 @@ int main() {
     // Penjumlahan matriks A dan B
     for (i = 0; i < 3; i++)
         for (j = 0; j < 4; j++)
-            X[i][j] = A[i][j] + B[i][j];
+            H[i][j] = A[i][j] + B[i][j];
 
     // Cetak hasil penjumlahan matriks A dan B
     cout << "\nIn matriks penjumlahan A+B\n";
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 4; j++)
-            cout << " " << X[i][j];
+            cout << " " << H[i][j];
         cout << endl;
     }
 

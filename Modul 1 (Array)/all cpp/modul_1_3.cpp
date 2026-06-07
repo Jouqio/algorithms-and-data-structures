@@ -8,8 +8,8 @@ void printArray(int a[][3]);
 
 int main() {
     int matriks1[2][3] = {{1, 2, 3}, {4, 5, 6}};
-    int matriks2[2][3] = {{1, 2, 3}, {1, 2, 3}};
-    int matriks3[2][3] = {{1, 2, 0}, {4, 0, 0}};
+    int matriks2[2][3] = {1, 2, 3, 4, 5};
+    int matriks3[2][3] = {{1, 2, 0}, {4}};
 
     printf("Matriks 1:\n");
     printArray(matriks1);
