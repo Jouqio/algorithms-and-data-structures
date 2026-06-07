@@ -3,29 +3,22 @@
    Menginisialisasi array 3 dimensi dan menampilkan
    setiap nilai elemen beserta indeksnya */
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-int main() {
-    // Inisialisasi array 3 dimensi [2][3][4]
-    int multiD[2][3][4] = {
-        {
-            {1, 3, 5, 0},
-            {2, 3, 1, 2},
-            {0, 1, 2, 0}
-        },
-        {
-            {1, 0, 1, 2},
-            {0, 1, 2, 1},
-            {2, 0, 1, 2}
+int main(void)
+{
+    // initializing the 3-dimensional array
+    int x[2][3][2] = { { { 0, 1 }, { 2, 3 }, { 4, 5 } },
+                       { { 6, 7 }, { 8, 9 }, { 10, 11 } } };
+
+    // output each element's value
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            for (int k = 0; k < 2; ++k) {
+                printf("Element at x[%i][%i][%i] = %d\n", i,
+                       j, k, x[i][j][k]);
+            }
         }
-    };
-
-    // Tampilkan setiap nilai elemen beserta indeksnya
-    for (int x = 0; x < 2; x++)
-        for (int y = 0; y < 3; y++)
-            for (int z = 0; z < 4; z++)
-                printf("multiD[%d][%d][%d] = %d\n", x, y, z, multiD[x][y][z]);
-
-    return 0;
+    }
+    return (0);
 }
