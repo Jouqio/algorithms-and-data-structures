@@ -7,12 +7,12 @@
 int main() {
     int square[100];
     int i; /* loop index */
-    int n; /* the integer */
+    int k; /* the integer */
 
     /* calculate the squares */
     for (i = 0; i < 10; i++) {
-        n = i;
-        square[i] = n * n;
+        k = i + 1;
+        square[i] = k * k;
     }
 
     for (i = 0; i < 10; i++)
