@@ -6,7 +6,7 @@ int main()
 {
     typedef struct {
         char nomhs[12];
-        char nama[21];
+        char nama[20];
         float nilai;
     } data_nilai;
     
