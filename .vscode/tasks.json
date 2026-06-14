@@ -7,7 +7,7 @@
             "command": "g++",
             "args": [
                 "-Wall",
-                "-Wextraa",
+                "-Wextra",
                 "-g3",
                 "${file}",
                 "-o",
